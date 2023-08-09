@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 60%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: green;
+}
+
+.display {
+    width: 400px;
+    height: 100px;
+    border: 1px solid red;
+    position: relative;
+    border-radius: 10px;
+    animation: glow 5s ease infinite forwards;
+    box-shadow: rgb(255, 0, 0 / 36%) 1px 17px 65px 19px, rgb(255, 0, 0 / 37%) 0px 0px 44px 6px;
+}
+
+@keyframes glow {
+    0%{
+        border-color: red;
+        box-shadow: rgb(255, 0, 0 / 36%) 1px 17px 65px 19px, rgb(255, 0, 0 / 37%) 0px 0px 44px 6px;
+    }
+    25% {
+        border-color: orange;
+        box-shadow: rgba(0, 128, 0, 0.438) 1px 17px 65px 19px, rgba(255, 0, 0, 0.5) 0px 0px 44px 6px;
+    }
+    50% {
+        border-color: yellow;
+        box-shadow: rgba(255, 0, 0, 0.438) 1px 17px 65px 19px, rgba(0, 0, 255, 0.438) 0px 0px 44px 6px;
+    }
+    75% {
+        border-radius: blue;
+        box-shadow: rgba(255, 255, 0, 0.459) 1px 17px 65px 19px, rgba(255, 255, 0, 0.459) 0px 0px 44px 6px;
+    }
+}
+
+.display #number {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 999;
+    user-select: none;
+    -webkit-tap-highlight-color: rgb(255, 255, 255, 0)
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 119px;
+    border: 3px solid red;
+    animation: animate 5s ease infinite forwards;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+@keyframes animate {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: green;
+    }
+    50% {
+        border-color: blue;
+    }
+    75% {
+        border-color: yellow;
+    }
+}
+
+.bar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+}
+
+.btn:focus {
+    color: gray;
+}
