@@ -1,4 +1,4 @@
-# CS50-Finale-Project-Stop-Watch
+# CS50-Final-Project-Stop-Watch
 
 Project Title - Stop Watch
 
